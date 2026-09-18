@@ -24,6 +24,18 @@ Alert emails are sent via the local mail server of a **NethServer 8** instance. 
 
 ## Installation
 
+Quick install via curl (fetches the script straight from GitHub):
+
+```bash
+sudo curl -fsSL -o /usr/local/bin/supervision.sh \
+  https://raw.githubusercontent.com/stephdl/ns8-supervision/main/supervision.sh
+sudo chmod 750 /usr/local/bin/supervision.sh
+sudo touch /var/log/supervision.log
+sudo chmod 640 /var/log/supervision.log
+```
+
+Or manually, from a local clone:
+
 ```bash
 sudo cp supervision.sh /usr/local/bin/supervision.sh
 sudo chmod 750 /usr/local/bin/supervision.sh
